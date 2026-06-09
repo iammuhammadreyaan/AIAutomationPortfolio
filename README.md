@@ -1,4 +1,4 @@
-# n8n Automation Portfolio
+# AIAutomationPortfolio
 
 Hi, I design and build automation systems using n8n to help businesses save time and automate repetitive tasks.
 
