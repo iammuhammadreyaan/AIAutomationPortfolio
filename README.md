@@ -41,6 +41,16 @@ Sends real-time alerts to WhatsApp/Telegram when a new lead is captured.
 
 ---
 
+## Services I Offer
+
+- Business Workflow Automation
+- Lead Capture & Notification Systems
+- WhatsApp / Telegram Bots
+- Email Automation Workflows
+- API Integration with n8n
+
+---
+
 ## Goal
 To build real-world automation systems for businesses and clients.
 
