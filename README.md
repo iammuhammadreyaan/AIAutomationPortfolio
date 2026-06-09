@@ -21,14 +21,14 @@ I specialize in creating automation systems that save time, reduce manual work, 
 
 ## Featured Projects
 
-### Form To Email Automation
-Automatically sends form submissions directly to email.
+### 📌 Form To Email Automation
+A simple automation that sends form submissions directly to email in real time.
 
-### Webhook Response System
-Handles incoming webhook requests and sends automated responses.
+### 📌 Webhook Response System
+Handles incoming webhook requests and returns automated responses instantly.
 
-### Lead Notification System
-Sends instant alerts when new leads are captured.
+### 📌 Lead Notification System
+Sends real-time alerts to WhatsApp/Telegram when a new lead is captured.
 
 ---
 
