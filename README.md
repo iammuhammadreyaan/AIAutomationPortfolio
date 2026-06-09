@@ -1,6 +1,6 @@
 # n8n Automation Portfolio
 
-Hi, I build AI-powered automation workflows using n8n.
+Hi, I design and build automation systems using n8n to help businesses save time and automate repetitive tasks.
 
 ---
 
