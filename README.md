@@ -57,4 +57,4 @@ To build real-world automation systems for businesses and clients.
 ---
 
 ## Contact
-(Add your email or freelance profile later)
+iammuhammadreyaan@gmail.com
