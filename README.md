@@ -19,16 +19,13 @@ I specialize in creating automation systems that save time, reduce manual work, 
 
 ---
 
-## Featured Projects
+## 🚀 Featured Projects
 
-### 📌 Form To Email Automation
-A simple automation that sends form submissions directly to email in real time.
-
-### 📌 Webhook Response System
-Handles incoming webhook requests and returns automated responses instantly.
-
-### 📌 Lead Notification System
-Sends real-time alerts to WhatsApp/Telegram when a new lead is captured.
+| Project | Description | Tech / APIs Used
+|---|---|---|---|
+| AI Appointment Bot | Automates booking and scheduling via chat | n8n, Google Calendar API
+| AI Email Assistant | Drafts and sends automated email responses | n8n, Gmail API, OpenAI |
+| AI Lead Collector | Captures and notifies new leads in real time | n8n, Webhooks, Telegram API
 
 ---
 
