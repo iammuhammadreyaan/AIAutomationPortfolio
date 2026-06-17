@@ -69,13 +69,10 @@ SmartFAQ Bot solves this with a single n8n workflow that:
 ---
 
 ## Screenshots
-- Full workflow canvas (both branches)
-- Telegram Trigger node configuration
-- Basic LLM Chain + Groq Chat Model connection
-- IF node escalation conditions
-- Google Sheets `memory` and `escalations` tabs with sample data
-- Telegram conversation showing an FAQ answer and an escalation response
-- Sample escalation email in inbox
+
+![Preview](./Screenshots/1.png)
+
+![Preview](./Screenshots/2.png)
 
 ---
 
