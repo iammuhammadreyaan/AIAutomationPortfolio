@@ -65,11 +65,11 @@ SmartBook AI solves this by acting as a 24/7 AI receptionist on WhatsApp. A user
 ---
 
 ## Screenshots
-- Full workflow design in n8n
-- Webhook + AI Agent node configuration
-- Google Calendar and Airtable tool setup inside the AI Agent
-- Example WhatsApp conversation showing booking, reschedule, and cancellation
-- Airtable Bookings table with saved records
+
+![Preview](./Screenshots/1.png)
+![Preview](./Screenshots/2.png)
+![Preview](./Screenshots/3.png)
+![Preview](./Screenshots/4.png)
 
 ---
 
