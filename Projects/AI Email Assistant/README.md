@@ -56,12 +56,9 @@ The result: leads are engaged within seconds, and the team always has an up-to-d
 ---
 
 ## Screenshots
-- Full workflow canvas in n8n
-- Webhook node configuration + Tally form
-- AI Agent node showing the qualification prompt
-- Switch node with Hot/Warm/Cold routing rules
-- Example email received for a Hot lead
-- Google Sheets "Leads" tab with logged entries
+
+![Preview](./Screenshots/1.png)
+![Preview](./Screenshots/2.png)
 
 ---
 
