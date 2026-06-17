@@ -49,9 +49,6 @@ Add screenshots of:
 
 ---
 
-## Demo Video
-Available on request.
-
 ---
 
 ## Key Learnings
