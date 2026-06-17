@@ -76,13 +76,9 @@ The result: every lead is acknowledged within seconds, qualified automatically, 
 ---
 
 ## Screenshots
-- The full n8n workflow canvas (all nodes connected)
-- The Tally form design
-- The Webhook trigger / test data
-- The AI Lead Brain node output (JSON response)
-- The Google Sheets dashboard with logged leads
-- An example personalized reply email
-- An example "Hot Lead Alert" email
+
+![Preview](./Screenshots/1.png)
+![Preview](./Screenshots/2.png)
 
 ---
 
