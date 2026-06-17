@@ -42,10 +42,10 @@ A single JSON response containing all 6 video assets — 5 hooks, 5 titles, a fu
 ---
 
 ## Screenshots
-Add screenshots of:
-- Workflow canvas showing all parallel branches
-- Basic LLM Chain node with prompt
-- Sample response output
+
+![Preview](./Screenshots/1.png)
+![Preview](./Screenshots/2.png)
+![Preview](./Screenshots/3.png)
 
 ---
 
