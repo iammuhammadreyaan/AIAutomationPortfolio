@@ -69,12 +69,9 @@ Google Sheets simultaneously logs the full content package with topic, tone, pla
 ---
 
 ## Screenshots
-Add screenshots of:
-- Full workflow design in n8n canvas
-- Telegram bot conversation flow
-- Google Sheets session and output log
-- AI Agent node configuration
-- Final content output in Telegram
+
+![Preview](./Screenshots/1.png)
+![Preview](./Screenshots/2.png)
 
 ---
 
