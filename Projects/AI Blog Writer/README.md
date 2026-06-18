@@ -55,12 +55,12 @@ This n8n workflow accepts a keyword via a POST webhook request, runs it through 
 
 ## Screenshots
 
-Add screenshots of:
-- Full workflow design in n8n canvas
-- Webhook (Keyword Input) node setup
-- AI Agent node configuration with Groq
-- Assemble Final Blog code node output
-- Final Google Doc output with formatted content
+![Preview](./Screenshots/1.png)
+![Preview](./Screenshots/2.png)
+![Preview](./Screenshots/3.png)
+![Preview](./Screenshots/4.png)
+![Preview](./Screenshots/5.png)
+![Preview](./Screenshots/6.png)
 
 ---
 
