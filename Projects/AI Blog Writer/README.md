@@ -1,4 +1,4 @@
-# Day 40 — AI Blog Writer
+# AI Blog Writer
 
 ## Overview
 A fully automated AI-powered blog writing workflow built in n8n that takes a single keyword as input and outputs a complete, SEO-optimized 1500-word blog post — including title, outline, introduction, full body, and meta description — saved automatically to Google Docs.
