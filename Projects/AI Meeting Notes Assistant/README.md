@@ -58,7 +58,17 @@ For every transcript submitted, the user receives:
 
 ## Screenshots
 
-
+![Preview](./Screenshots/1.png)
+![Preview](./Screenshots/2.png)
+![Preview](./Screenshots/3.png)
+![Preview](./Screenshots/4.png)
+![Preview](./Screenshots/5.png)
+![Preview](./Screenshots/6.png)
+![Preview](./Screenshots/7.png)
+![Preview](./Screenshots/8.png)
+![Preview](./Screenshots/9.png)
+![Preview](./Screenshots/10.png)
+![Preview](./Screenshots/11.png)
 
 ---
 
