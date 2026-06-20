@@ -53,6 +53,8 @@ A human reviews the draft, deletes the two options they don't want, and sends.
 
 ## Screenshots
 
+![Preview](./Screenshots/1.png)
+![Preview](./Screenshots/2.png)
 
 ---
 
