@@ -41,6 +41,9 @@ This workflow takes raw text as input, sends it to an AI model with a single str
 
 ---
 
+## Screenshots
+
+![Preview](./Screenshots/1.png)
 
 
 ---
