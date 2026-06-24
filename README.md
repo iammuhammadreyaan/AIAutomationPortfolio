@@ -28,20 +28,6 @@ Every project here is real, documented, and ready to deploy.
 
 ---
 
-## 📁 Repository Structure
-
-AIAutomationPortfolio/
-├── Projects/ → each project has README, workflow.json, screenshots/
-├── Templates/ → reusable n8n building blocks
-└── README.md → you are here
-
-Every project folder includes:
-- README.md — problem, solution, results, setup
-- workflow.json — importable directly into n8n
-- screenshots/ — visual walkthrough of the workflow
-
----
-
 ## 🛠️ Skills & Stack
 
 - n8n Workflow Automation
