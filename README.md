@@ -1,77 +1,68 @@
-# 👋 Hi, I'm Muhammad Reyaan
+# AI Automation Portfolio — Muhammad Reyaan
 
-### AI Automation Developer | n8n Workflow Specialist
+### n8n Workflow Specialist · AI Integrations · Business Automation
 
-I design and build AI-powered automation systems using **n8n** — helping businesses save time, eliminate repetitive tasks, and scale through smart workflows, chatbots, and API integrations.
+I design and build automation systems that remove manual bottlenecks —
+from lead capture to AI chatbots to full email pipelines.
+Every project here is real, documented, and ready to deploy.
 
 ![n8n](https://img.shields.io/badge/n8n-EA4B71?style=for-the-badge&logo=n8n&logoColor=white)
 ![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white)
-![Automation](https://img.shields.io/badge/Automation-2EA44F?style=for-the-badge)
 ![Webhooks](https://img.shields.io/badge/Webhooks-FF6F00?style=for-the-badge)
-
----
-
-## 🧠 About Me
-
-I specialize in building automation systems that reduce manual work and improve business efficiency — from lead capture and notification systems to AI-powered chatbots and email automations. Every project in this repo is a real, working n8n workflow, complete with documentation, screenshots, and setup notes.
+![Telegram](https://img.shields.io/badge/Telegram-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)
+![Gmail](https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white)
 
 ---
 
 ## 🚀 Featured Projects
 
-| Project | Description | Tech / APIs Used |
+| Project | Problem It Solves | Stack |
 |---|---|---|
-| [AI Appointment Bot](./Projects/AI%20Appointment%20Bot) | Automates appointment booking and scheduling through a conversational flow | n8n, Calendar API |
-| [AI Email Assistant](./Projects/AI%20Email%20Assistant) | Reads, drafts, and sends automated email responses | n8n, Gmail API, OpenAI |
-| [AI Lead Collector](./Projects/AI%20Lead%20Collector) | Captures incoming leads and sends real-time notifications | n8n, Webhooks, Telegram/WhatsApp API |
+| [AI Lead Collector](./Projects/AI%20Lead%20Collector) | Captures inbound leads and delivers instant alerts via Telegram or WhatsApp — no CRM babysitting | n8n · Webhooks · Telegram API |
+| [AI Email Assistant](./Projects/AI%20Email%20Assistant) | Monitors inbox, generates context-aware replies with GPT, sends automatically | n8n · Gmail API · OpenAI |
+| [AI Appointment Bot](./Projects/AI%20Appointment%20Bot) | Conversational booking flow — handles scheduling without human involvement | n8n · Calendar API · OpenAI |
+| [SmartFAQ Bot](./Projects/SmartFAQ%20Bot) | Answers repetitive customer questions from a knowledge base, 24/7 | n8n · OpenAI · Webhooks |
+| [AI Meeting Notes Assistant](./Projects/AI%20Meeting%20Notes%20Assistant) | Turns raw meeting transcripts into structured summaries and action items | n8n · OpenAI · Google Docs |
 
-📂 Browse everything → [`/Projects`](./Projects)
-
-Each project folder follows the same structure:
-- 📄 `README.md` — overview, how it works, and setup
-- 🧩 `workflow.json` — exportable n8n workflow
-- 🖼️ `screenshots/` — visual walkthrough
-- 📚 `docs/` — API notes & extra documentation
+📂 [Browse all 10 projects →](./Projects)
 
 ---
 
-## 🛠️ Skills & Tools
+## 📁 Repository Structure
+
+AIAutomationPortfolio/
+├── Projects/ → each project has README, workflow.json, screenshots/
+├── Templates/ → reusable n8n building blocks
+└── README.md → you are here
+
+Every project folder includes:
+- README.md — problem, solution, results, setup
+- workflow.json — importable directly into n8n
+- screenshots/ — visual walkthrough of the workflow
+
+---
+
+## 🛠️ Skills & Stack
 
 - n8n Workflow Automation
+- OpenAI / LLM Integrations
 - REST APIs & Webhooks
-- AI / LLM Integrations (OpenAI & others)
-- WhatsApp / Telegram Bot Automation
-- Email Automation Systems
-- Workflow Design & Debugging
+- WhatsApp & Telegram Bot Automation
+- Gmail & Email Pipeline Automation
+- Workflow Design, Testing & Debugging
 
 ---
 
-## 💼 Services I Offer
+## 💼 Services
 
-- Business Process Automation
 - Lead Capture & Notification Systems
 - AI Chatbots (WhatsApp / Telegram / Web)
-- Email Automation Workflows
-- Custom API Integrations with n8n
+- Email Automation Pipelines
+- Meeting & Document Automation
+- Custom API Integrations
 
 ---
 
-## 📂 Repository Structure
-
-```
-AIAutomationPortfolio/
-├── Projects/    → individual automation projects (workflow, docs, screenshots)
-├── Templates/   → reusable n8n templates
-└── README.md    → you are here
-```
-
----
-
-## 📫 Get in Touch
+## 📫 Work With Me
 
 📧 [iammuhammadreyaan@gmail.com](mailto:iammuhammadreyaan@gmail.com)
-🔗 [GitHub Profile](https://github.com/iammuhammadreyaan)
-
----
-
-⭐ If you find these workflows useful, consider starring this repo!
