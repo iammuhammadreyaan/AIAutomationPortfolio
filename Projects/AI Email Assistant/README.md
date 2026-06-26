@@ -1,61 +1,58 @@
-# AI Lead Qualification & Follow-Up System for Real Estate
+# AI Email Assistant
 
 ## Overview
-An end-to-end n8n automation that captures incoming real estate leads from a web form, uses AI to instantly qualify each lead as **Hot**, **Warm**, or **Cold**, sends a personalized follow-up email tailored to that lead's level of interest, and logs every lead into a centralized Google Sheet for the sales team to track.
+An intelligent n8n automation that monitors a Gmail inbox, fetches the full content of every incoming email, uses AI to summarize it, categorize it, and draft a personalized reply — then logs the summary and category to Google Sheets and saves the draft reply directly inside the correct Gmail thread.
 
 ---
 
 ## Problem
-Real estate agencies generate leads through Facebook Ads, Google Ads, and landing pages — but most teams take hours (or days) to respond. By the time someone follows up, the lead has often already gone cold or contacted a competitor. Manually reading every form submission, deciding how serious the lead is, and writing a personalized response simply doesn't scale once lead volume increases.
+Professionals and business owners receive dozens of emails daily. Reading every email fully, deciding what category it belongs to, writing a thoughtful reply, and keeping a record of important messages is time-consuming and mentally draining. Missing or delaying replies to urgent or important emails can cost real business opportunities.
 
 ---
 
 ## Solution
-This n8n workflow removes the delay and the manual work entirely:
+This n8n workflow acts as a personal AI email assistant that runs automatically on every new incoming email:
 
-- The moment a prospect submits a lead form, the workflow is triggered instantly
-- An AI agent reads the lead's budget, timeline, and intent, and scores them as Hot, Warm, or Cold based on a defined qualification logic
-- Based on that score, the lead automatically receives one of three tailored emails — including a direct booking link for hot leads
-- Every lead, along with its score and details, is logged into a Google Sheet that acts as a simple CRM for the sales team
+- The moment a new email arrives in Gmail, the workflow triggers instantly
+- The full email body is fetched and passed to an AI agent
+- The AI summarizes the email in 2-3 sentences, assigns it a category (Work, Personal, Spam, Newsletter, Urgent, or Other), and drafts a professional reply
+- The summary and category are logged to a Google Sheet for easy reference
+- The drafted reply is saved directly as a Gmail draft inside the correct thread, ready for the user to review and send with one click
 
-The result: leads are engaged within seconds, and the team always has an up-to-date, scored list of prospects to follow up on.
+The result: every email is read, categorized, summarized and pre-replied within seconds — the user just reviews and hits send.
 
 ---
 
 ## Tools Used
 - **n8n** – core workflow automation
-- **Webhooks** – instant lead capture
-- **Tally.so** – lead intake form
-- **Groq (Llama 3.3 70B)** – AI lead qualification & personalized reply generation via LangChain AI Agent node
-- **Gmail** – automated email delivery
-- **Google Sheets** – lead tracking / lightweight CRM
-- **Calendly** – appointment booking for hot leads
+- **Gmail Trigger** – detects new incoming emails instantly
+- **Gmail Get Message** – fetches the complete email body
+- **Groq (Llama 3.3 70B)** – AI summarization, categorization and reply drafting via LangChain AI Agent node
+- **Gmail** – saves the AI-drafted reply as a draft in the correct thread
+- **Google Sheets** – logs email summaries and categories for reference
 
 ---
 
 ## Workflow Steps
-1. **Trigger** – A Webhook node receives lead data the instant a prospect submits the Tally intake form (name, email, phone, budget, timeline, intent, location)
-2. **Data Extraction** – A Set node cleans and structures the raw webhook payload into usable fields
-3. **AI Qualification** – A Groq-powered AI Agent analyzes the lead's budget and timeline, returns a score (Hot/Warm/Cold), a reason for the score, and a personalized reply snippet — all as structured JSON
-4. **Parsing** – A second Set node parses the AI's JSON output and merges it back with the original lead details
-5. **Routing** – A Switch node routes the lead down one of three paths based on its score
-6. **Action** – Each path sends a tailored email via Gmail:
-   - **Hot** → personalized email + direct Calendly booking link
-   - **Warm** → personalized email + invitation to reply with questions
-   - **Cold** → polite acknowledgment email for future follow-up
-7. **Output / Logging** – Each branch logs the lead's full details and score into a Google Sheet for the sales team
+1. **Trigger** – Gmail Trigger node fires the moment a new email lands in the inbox
+2. **Fetch Full Email** – A Gmail Get Message node fetches the complete email body using the message ID (the trigger only returns a snippet)
+3. **Data Extraction** – A Set node extracts and structures the key fields: subject, sender, body, message ID and thread ID
+4. **AI Processing** – A Groq-powered AI Agent reads the email and returns a structured JSON response containing:
+   - A 2-3 sentence summary
+   - A category (Work / Personal / Spam / Newsletter / Urgent / Other)
+   - A professionally drafted reply
+5. **Parsing** – A second Set node parses the AI's JSON output into 3 clean separate fields
+6. **Logging** – A Google Sheets node appends a new row with the date, sender, subject, category and summary
+7. **Draft Reply** – A Gmail node saves the AI-drafted reply as a draft inside the original email thread, ready for one-click sending
 
 ---
 
 ## Output
-- **Hot Lead Example:** Lead receives an email referencing their specific budget/location/intent, plus a "Book your free call here" Calendly link
-- **Warm Lead Example:** Lead receives a personalized email encouraging them to reply with questions, kept warm for future follow-up
-- **Cold Lead Example:** Lead receives a friendly acknowledgment email, logged for long-term nurture
-- **Google Sheet "Leads" tab:** Every submission appears as a new row with Date, Name, Email, Phone, Budget, Timeline, Looking To, Location, and AI-assigned Score — giving the sales team an instant, sorted view of who to prioritize
+- **Google Sheet "Email Log" tab:** Every processed email appears as a new row with Date, From, Subject, Category and Summary — giving the user a quick scannable log of their inbox
+- **Gmail Drafts folder:** A pre-written, personalized reply appears inside the correct email thread for every processed email — the user simply reviews and sends
+- **Categories assigned:** Work, Personal, Spam, Newsletter, Urgent, Other — making it easy to prioritize at a glance
 
 ---
-
-## Screenshots
 
 ![Preview](./Screenshots/1.png)
 ![Preview](./Screenshots/2.png)
@@ -65,9 +62,9 @@ The result: leads are engaged within seconds, and the team always has an up-to-d
 ---
 
 ## Key Learnings
-- How to capture and structure data from a third-party form (Tally) via webhooks in n8n
-- Using AI Agents with Groq's Llama 3.3 70B model to perform structured reasoning tasks (lead scoring) and return clean, parseable JSON
-- Designing prompts that enforce strict output formats so downstream nodes can reliably parse AI responses
-- Building conditional logic with Switch nodes to create personalized, branching automation paths
-- Connecting multiple branches back to a shared Google Sheet for unified lead tracking
-- Designing an automation around a real, validated market need (sourced directly from live freelance job postings) rather than building speculatively
+- The Gmail Trigger only returns a short snippet, not the full email body — a separate Gmail Get Message node is required to fetch complete content
+- Prompting the AI to return strictly formatted JSON makes downstream parsing reliable and predictable
+- How to use thread IDs to ensure Gmail draft replies appear inside the correct conversation thread rather than as new emails
+- Splitting one AI output into multiple parallel outputs (Sheets + Gmail draft) using branched nodes
+- Designing AI prompts with clear rules and output structure to get consistent, production-ready results from Groq's Llama model
+- Building a practical, everyday productivity tool that solves a real personal and business pain point
